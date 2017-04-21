@@ -26,7 +26,7 @@ import com.itextpdf.text.pdf.PdfWriter;
 public class FileUploadController {
 	
 	private String saveDirectory = "/Users/kapil/Desktop/test1/output/Final";
-	
+	private String gitHubBranch = "dev branch";
 	@RequestMapping(method = RequestMethod.POST,value="/uploadFile.do")
 	public String handleFileUpload(HttpServletRequest request, 
 			@RequestParam CommonsMultipartFile[] fileUpload) throws Exception {
